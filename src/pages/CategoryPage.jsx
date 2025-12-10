@@ -2,8 +2,9 @@ import React, { useEffect, useMemo, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import RightRailAds from "../components/RightRailAds";
 
-const BASE = `http://${window.location.hostname}:5000`;
-const api = (p) => `${BASE}${p}`;
+const res = await fetch(`${API_BASE}/api/news/category/${kategori}`);
+const BASE = import.meta.env.VITE_API_BASE || "https://devs.jtnapi.my.id/jtn";
+const api = (path) => `${BASE}${path}`;
 
 export default function CategoryPage({
   title = "Berita",
