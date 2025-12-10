@@ -1,9 +1,8 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import RightRailAds from "../components/RightRailAds";
+import { API_BASE, IMAGE_BASE } from "../config/api";
 
-const BASE = `http://${window.location.hostname}:5000`;
-const api = (p) => `${BASE}${p}`;
 
 export default function CategoryPage({
   title = "Berita",

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link, useNavigate, useLocation } from "react-router-dom";
-
-const API = `http://${window.location.hostname}:5000/api`;
+import { API_BASE, IMAGE_BASE } from "../config/api";
 
 export default function Detail() {
   const { id } = useParams();

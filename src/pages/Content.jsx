@@ -1,9 +1,7 @@
 import React, { useEffect, useState, useRef, useLayoutEffect } from "react";
 import { Link } from "react-router-dom";
 import HeroMagazine from "../components/HeroMagazine";
-
-const API_BASE = `http://${window.location.hostname}:5000/api`;
-const IMAGE_BASE = "https://risetcdn.jatimtimes.com";
+import { API_BASE, IMAGE_BASE } from "../config/api";
 
 const KATEGORI = [
   "ekonomi",
