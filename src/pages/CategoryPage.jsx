@@ -3,6 +3,12 @@ import { Link, useSearchParams } from "react-router-dom";
 import RightRailAds from "../components/RightRailAds";
 import { API_BASE, IMAGE_BASE } from "../config/api";
 
+<<<<<<< HEAD
+=======
+const res = await fetch(`${API_BASE}/api/news/category/${kategori}`);
+const BASE = import.meta.env.VITE_API_BASE || "https://devs.jtnapi.my.id/jtn";
+const api = (path) => `${BASE}${path}`;
+>>>>>>> bf8bfb35bdab85f290771be1f4292dc672e0e963
 
 export default function CategoryPage({
   title = "Berita",
