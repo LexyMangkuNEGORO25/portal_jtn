@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import HeroMagazine from "../components/HeroMagazine";
-import { API_BASE, IMAGE_BASE } from "../config/api";
 
+const API_BASE = `http://${window.location.hostname}:5000`;
 
 function getKategori(n) {
   return (
