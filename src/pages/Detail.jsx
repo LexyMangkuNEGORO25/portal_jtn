@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link, useNavigate, useLocation } from "react-router-dom";
 
-const API = `http://${window.location.hostname}:5000/api`;
+const res = await fetch(`${API_BASE}/api/news/detail/${id}`);
+const API = import.meta.env.VITE_API_BASE || "https://devs.jtnapi.my.id/jtn";
 
 export default function Detail() {
   const { id } = useParams();
