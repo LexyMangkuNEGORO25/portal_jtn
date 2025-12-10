@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import HeroMagazine from "../components/HeroMagazine";
 
-const API_BASE = `http://${window.location.hostname}:5000`;
+const API_BASE = import.meta.env.VITE_API_BASE || "https://devs.jtnapi.my.id/jtn";
 
 function getKategori(n) {
   return (
