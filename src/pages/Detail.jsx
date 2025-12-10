@@ -1,12 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link, useNavigate, useLocation } from "react-router-dom";
-<<<<<<< HEAD
 import { API_BASE, IMAGE_BASE } from "../config/api";
-=======
 
-const res = await fetch(`${API_BASE}/api/news/detail/${id}`);
-const API = import.meta.env.VITE_API_BASE || "https://devs.jtnapi.my.id/jtn";
->>>>>>> bf8bfb35bdab85f290771be1f4292dc672e0e963
 
 export default function Detail() {
   const { id } = useParams();
